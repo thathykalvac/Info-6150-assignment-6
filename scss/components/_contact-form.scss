@@ -7,7 +7,10 @@
     background-color: aquamarine;        // Optional: Light background color
     border-radius: 5px;               // Optional: Rounded corners
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Optional: Shadow for depth
-  
+    width: 90%;
+    margin: auto;
+    opacity: 0.95;
+
     h2 {
       margin-bottom: 20px;            // Space below the header
       color: $primary-color;           // Use primary color for the title
@@ -16,7 +19,7 @@
     form {
       display: flex;                  // Use Flexbox for the form layout
       flex-direction: column;         // Arrange inputs in a column
-      width: 100%;                    // Make the form full width
+      width: 50%;                    // Make the form full width
       max-width: 500px;               // Optional: Limit the maximum width
   
       label {

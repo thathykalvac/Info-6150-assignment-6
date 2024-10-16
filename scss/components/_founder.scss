@@ -2,7 +2,10 @@
     background-color: lighten($secondary-color, 40%);
     padding: 20px;
     border-radius: 5px;
+    opacity: 0.95;
     text-align: center;
+    width: 90%;
+    margin: auto;
   
     h2 {
       color: $primary-color;
