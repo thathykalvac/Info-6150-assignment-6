@@ -1,0 +1,23 @@
+.faq {
+    margin: 40px 0;
+  
+    .faq-item {
+      margin-bottom: 20px;
+  
+      h4 {
+        cursor: pointer;
+        color: $primary-color;
+      }
+  
+      p {
+        display: none;
+        margin-top: 10px;
+        color: #555;
+  
+        &.active {
+          display: block;
+        }
+      }
+    }
+  }
+  

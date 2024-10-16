@@ -1,0 +1,32 @@
+@import 'themes/variables';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/product-card';
+@import 'components/contact-form';
+@import 'components/faq';
+@import 'components/founder';
+@import 'layout/grid';
+@import 'layout/flex';
+@import 'pages/home';
+@import 'pages/product';
+@import 'themes/colors';
+@import 'themes/mixins';
+
+// Media Queries for responsiveness
+@include respond-to(small) {
+  .banner {
+    font-size: rem-calc(24);
+  }
+
+  .product-card {
+    padding: 15px;
+  }
+}
+
+@include respond-to(medium) {
+  .banner {
+    padding: 30px 10px;
+  }
+}

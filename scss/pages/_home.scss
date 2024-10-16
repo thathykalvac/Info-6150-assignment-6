@@ -1,0 +1,19 @@
+body {
+    background-image: url('../images/background.jpg'); // Path to your background image
+    background-size: cover;             // Cover the entire area
+    background-position: center;        // Center the image
+    background-repeat: no-repeat;       // Prevent repetition
+    background-attachment: fixed;       // Keep the background fixed during scroll
+    min-height: 100vh;                 // Ensure it covers the full height of the viewport
+    display: flex;                     // Flexbox for centering
+    flex-direction: column;            // Arrange items in a column
+          
+      
+  }
+  
+  .banner {
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+  }
+  

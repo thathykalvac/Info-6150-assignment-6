@@ -1,0 +1,15 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); // Create three equal columns
+    gap: 20px;                             // Space between grid items
+    padding: 20px;                         // Padding around the grid
+  
+    @media (max-width: 900px) {            // Adjust for medium devices
+      grid-template-columns: repeat(2, 1fr); // Two columns on medium screens
+    }
+  
+    @media (max-width: 600px) {            // Adjust for small devices
+      grid-template-columns: 1fr;          // One column on small screens
+    }
+  }
+  
