@@ -1,14 +1,18 @@
 .product-card {
-    display: flex;                  // Use flexbox to center content
-    flex-direction: column;        // Align items in a column
-    justify-content: center;       // Center items vertically
-    align-items: center;           // Center items horizontally
+    opacity: 0.95;
+    
+    margin: auto;
     background-color: white;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
-    height: 300px;                // Set a fixed height for all product cards
+    display: flex;                     // Flexbox layout
+    flex-direction: column;            // Stack items vertically
+    align-items: center;               // Center the items horizontally
+    height: 400px;
+    justify-content: space-between;    // Space out the elements
+    padding: 20px;                     // Padding inside the card
+    border: 1px solid #ccc;            // Light border
+    border-radius: 10px;               // Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Add shadow for depth
+    transition: transform 0.3s ease;   // Transition effect              // Set a fixed height for all product cards
   
     &:hover {
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -21,6 +25,14 @@
   
     p {
       text-align: center;         // Center text
+    }
+    .product-image {
+      width: 100%;                     // Image takes full width of card
+                          // Preserve aspect ratio
+      height: 200px;                    // Fixed height for all images
+      object-fit: cover;
+      border-radius: 8px;              // Rounded corners for the image
+      margin-bottom: 15px;             // Space between image and title
     }
   
     button {

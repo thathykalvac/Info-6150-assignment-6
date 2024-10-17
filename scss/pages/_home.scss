@@ -1,5 +1,5 @@
 body {
-    background-image: url('../images/background.jpeg'); // Path to your background image
+    background-image: url('../images/background.avif'); // Path to your background image
     background-size: cover;             // Cover the entire area
     background-position: center;        // Center the image
     background-repeat: no-repeat;       // Prevent repetition
@@ -12,8 +12,28 @@ body {
   }
   
   .banner {
+    height: 50vh;
+    width: auto;
     text-align: center;
-    padding: 50px 20px;
-    color: white;
+    padding: 10%;
+    color: rgb(15, 12, 13);
+    .banner-text{
+      font-size: 2vw;
+    }
+    button {
+      margin-top: auto;          // Push button to the bottom of the card
+      background-color: $primary-color;
+      color: white;
+      padding: 10px;
+      margin:20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: lighten($primary-color, 10%);
+      }
+    }
   }
   
