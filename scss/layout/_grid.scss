@@ -1,15 +1,27 @@
 .product-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); // Create three equal columns
-    gap: 20px;                             // Space between grid items
-    padding: 20px;                         // Padding around the grid
-  
-    @media (max-width: 768px) {            // Adjust for medium devices
-      grid-template-columns: repeat(2, 1fr); // Two columns on medium screens
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;                             
+    padding: 20px;                         
+    @media (max-width: 768px) {            
+      grid-template-columns: repeat(2, 1fr); 
     }
   
-    @media (max-width: 480px) {            // Adjust for small devices
-      grid-template-columns: 1fr;          // One column on small screens
+    @media (max-width: 480px) {            
+      grid-template-columns: 1fr;          
+    }
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    padding: 20px; 
+    @media (max-width: 768px) {            
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    @media (max-width: 480px) {            
+      grid-template-columns: 1fr;          
     }
   }
   

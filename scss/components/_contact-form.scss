@@ -1,58 +1,58 @@
 .contact-form {
-    display: flex;                    // Use Flexbox for layout
-    flex-direction: column;           // Arrange items in a column
-    align-items: center;              // Center items horizontally
-    justify-content: center;           // Center items vertically
-    padding: 40px;                    // Add padding around the section
-    background-color: aquamarine;        // Optional: Light background color
-    border-radius: 5px;               // Optional: Rounded corners
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Optional: Shadow for depth
+    display: flex;                    
+    flex-direction: column;          
+    align-items: center;              
+    justify-content: center;           
+    padding: 40px;                    
+    background-color: aquamarine;        
+    border-radius: 5px;               
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     width: 90%;
     margin: auto;
     opacity: 0.95;
     margin-bottom: 20px;
 
     h2 {
-      margin-bottom: 20px;            // Space below the header
-      color: $primary-color;           // Use primary color for the title
+      margin-bottom: 20px;            
+      color: $primary-color;           
     }
   
     form {
-      display: flex;                  // Use Flexbox for the form layout
-      flex-direction: column;         // Arrange inputs in a column
-      width: 50%;                    // Make the form full width
-      max-width: 500px;               // Optional: Limit the maximum width
+      display: flex;                  
+      flex-direction: column;         
+      width: 50%;                    
+      max-width: 500px;               
   
       label {
-        margin-top: 10px;             // Space above each label
-        font-weight: bold;             // Bold labels
+        margin-top: 10px;             
+        font-weight: bold;            
       }
   
       input, textarea {
-        margin-top: 5px;              // Space above each input
-        padding: 10px;                // Padding inside inputs
-        border: 1px solid #ccc;       // Border for inputs
-        border-radius: 5px;           // Rounded corners for inputs
-        width: 100%;                   // Make inputs full width
-        box-sizing: border-box;        // Include padding and border in width
+        margin-top: 5px;              
+        padding: 10px;                
+        border: 1px solid #ccc;       
+        border-radius: 5px;          
+        width: 100%;                   
+        box-sizing: border-box;        
   
         &:focus {
-          border-color: $primary-color; // Change border color on focus
-          outline: none;                // Remove default outline
+          border-color: $primary-color; 
+          outline: none;                
         }
       }
   
       button {
-        margin-top: 20px;             // Space above the button
-        padding: 10px;                // Padding inside the button
-        background-color: $primary-color; // Button background
-        color: white;                  // Button text color
-        border: none;                  // No border
-        border-radius: 5px;           // Rounded corners
-        cursor: pointer;               // Pointer cursor on hover
+        margin-top: 20px;             
+        padding: 10px;                
+        background-color: $primary-color; 
+        color: white;                  
+        border: none;                 
+        border-radius: 5px;           
+        cursor: pointer;               
   
         &:hover {
-          background-color: lighten($primary-color, 10%); // Lighter on hover
+          background-color: lighten($primary-color, 10%); 
         }
       }
     }

@@ -14,7 +14,7 @@
 @import 'themes/colors';
 @import 'themes/mixins';
 
-// Media Queries for responsiveness
+
 @include respond-to(small) {
   .banner {
     font-size: rem-calc(24);

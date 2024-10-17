@@ -1,16 +1,21 @@
+@use 'sass:math';
+$icon-path: "../images/";
 body {
-    background-image: url('../images/background.avif'); // Path to your background image
-    background-size: cover;             // Cover the entire area
-    background-position: center;        // Center the image
-    background-repeat: no-repeat;       // Prevent repetition
-    background-attachment: fixed;       // Keep the background fixed during scroll
-    min-height: 100vh;                 // Ensure it covers the full height of the viewport
-    display: flex;                     // Flexbox for centering
-    flex-direction: column;            // Arrange items in a column
+    background-image: url('#{$icon-path}background.avif'); 
+    background-size: cover;             
+    background-position: center;        
+    background-repeat: no-repeat;       
+    background-attachment: fixed;       
+    min-height: 100vh;                 
+    display: flex;                     
+    flex-direction: column;            
           
       
   }
-  
+  @function rem($pixels) {
+    $rem-value: math.div($pixels, 16); 
+    @return #{$rem-value}rem; 
+  }
   .banner {
     height: 50vh;
     width: auto;
@@ -18,10 +23,10 @@ body {
     padding: 10%;
     color: rgb(15, 12, 13);
     .banner-text{
-      font-size: 2vw;
+      font-size: rem(18);
     }
     button {
-      margin-top: auto;          // Push button to the bottom of the card
+      margin-top: auto;          
       background-color: $primary-color;
       color: white;
       padding: 10px;
